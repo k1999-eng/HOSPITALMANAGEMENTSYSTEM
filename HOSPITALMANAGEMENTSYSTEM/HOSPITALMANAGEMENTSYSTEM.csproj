@@ -145,6 +145,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
     <Content Include="images\about-banner.jpg" />
     <Content Include="images\Admin-icon.png" />
     <Content Include="images\Doctor-icon.png" />
