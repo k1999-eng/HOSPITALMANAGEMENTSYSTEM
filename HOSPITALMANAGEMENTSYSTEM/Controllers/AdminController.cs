@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HOSPITALMANAGEMENTSYSTEM.Models;
+using System.Data;
 
 namespace HOSPITALMANAGEMENTSYSTEM.Controllers
 {
@@ -19,6 +21,11 @@ namespace HOSPITALMANAGEMENTSYSTEM.Controllers
         {
             return View();
         }
+        public ActionResult AddDoctor()
+        {
+            return View();
+        }
+
 
         public ActionResult AdminHome()
         {

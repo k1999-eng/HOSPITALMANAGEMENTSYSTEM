@@ -1,8 +1,41 @@
-﻿
+﻿@model HOSPITALMANAGEMENTSYSTEM.Models.Specializations
+@using HOSPITALMANAGEMENTSYSTEM.Models;
+
 @{
     ViewBag.Title = "AddSpecialization";
-    Layout = "~/Views/Admin/AdminMaster.cshtml";
+    Layout = "AdminMaster.cshtml";
 }
 
-<h2>AddSpecialization</h2>
+<center>
+    @using (Html.BeginForm("AdminStudent", "Admin", FormMethod.Post))
+    {
+        <div class="container">
+            <div class="row">
+                <div class="col">
 
+                </div>
+                <div class="col-8">
+                    <div class="row" style="background-color">
+                        <div class="col">
+                            <b>Specialization</b>
+                        </div>
+                        <div class="col">
+
+                            @Html.DropDownListFor(model => model.specializationName, new SelectList(Enum.GetValues(typeof(Special))),
+                            "Select", new { @class = "form-control" })
+
+                            @Html.ValidationMessageFor(model => model.specializationName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col">
+                            <input type="submit" value="ADD SPECIALIZATION" class="btn btn-primary" />
+                            <p style="color:red">@ViewBag.info</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    }
+</center>
