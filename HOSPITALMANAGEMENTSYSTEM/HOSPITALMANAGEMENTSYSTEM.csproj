@@ -237,10 +237,16 @@
     <Content Include="Views\Admin\AddSpecialization.cshtml" />
     <Content Include="Views\Admin\AddPatient.cshtml" />
     <Content Include="Views\Admin\AddDoctor.cshtml" />
+    <Content Include="Views\Doctor\DoctorMaster.cshtml" />
+    <Content Include="Views\Doctor\Profile.cshtml" />
+    <Content Include="Views\Doctor\Patients.cshtml" />
+    <Content Include="Views\Doctor\Appointments.cshtml" />
+    <Content Include="Views\Doctor\Login.cshtml" />
+    <Content Include="Views\Doctor\About.cshtml" />
+    <Content Include="Views\Doctor\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Doctor\" />
     <Folder Include="Views\Patient\" />
   </ItemGroup>
   <ItemGroup>
